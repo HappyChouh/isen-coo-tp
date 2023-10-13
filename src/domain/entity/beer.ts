@@ -8,11 +8,11 @@ type BeerDependencies = {
 export class Beer {
   public id: number;
   public name: string;
-  public desc?: string;
-  public url?: string;
-  public degree?: number;
-  public bitterness?: string;
-  public color?: BeerColorIntensity.UNKNOW;
+  public description?: string;
+  public urlImage?: string;
+  public alcoholByVolume? = 0;
+  public bitterness? = 0;
+  public color? = BeerColorIntensity.UNKNOW;
 
   constructor({ id, name }: BeerDependencies) {
     this.id = id;

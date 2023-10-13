@@ -1,5 +1,3 @@
-import { ServerResponse } from "http";
-
 export type PunkAPIBeer = {
   id: number;
   name: string;

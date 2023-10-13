@@ -2,9 +2,9 @@ import { BeerRepository } from "./../../domain/repository/beer-repository";
 import { Beer } from "../../domain/entity/beer";
 
 export type GetAllBeersDependencies = {
-  BeerRepository: BeerRepository;
+  beerRepository: BeerRepository;
 };
 
 export async function getAllBeers(deps: GetAllBeersDependencies): Promise<Beer[]> {
-  return await deps.BeerRepository.getAllBeers();
+  return await deps.beerRepository.getAllBeers();
 }
