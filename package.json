@@ -3,13 +3,14 @@
   "version": "1.0.0",
   "scripts": {
     "test": "echo \"Haha what tests ?\" && exit 1",
-    "start": "rimraf ./dist && node -r ts-node/register src/main"
+    "start": "rimraf ./dist && node -r ts-node/register src/infrastructure/api/main.ts"
   },
   "author": {
     "email": "martel_andre@proton.me",
     "name": "André Martel"
   },
   "dependencies": {
+    "axios": "^1.5.1",
     "express": "^4.18.2",
     "morgan": "^1.10.0"
   },
