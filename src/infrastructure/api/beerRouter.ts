@@ -12,7 +12,7 @@ export function createBeerRouter() {
     }),
   );
 
-  router.get("/me", async (_, res) => res.json({}));
+  router.get("/me", async (req, res) => res.json({}));
 
   return router;
 }
