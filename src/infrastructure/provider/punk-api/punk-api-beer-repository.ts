@@ -1,6 +1,7 @@
 import axios, { AxiosInstance } from "axios";
 import { Beer } from "../../../domain/entity/beer";
 import { BeerRepository } from "../../../domain/repository/beer-repository";
+import { PunkAPIBeerDeserializer } from "./punk-api-beer-deserializer";
 
 export class PunkAPIBeerRepository implements BeerRepository {
   private http: AxiosInstance;
@@ -12,6 +13,15 @@ export class PunkAPIBeerRepository implements BeerRepository {
   }
 
   async getAllBeers(): Promise<Beer[]> {
-    const { data } = await this.http.get("/");
+    try {
+      const { data } = await this.http.get("/beers");
+
+      if (!data?.length) {
+        return [];
+      }
+      return data.map((punkApiBeer: any) => PunkAPIBeerDeserializer.deserialize(punkApiBeer));
+    } catch (err) {
+      return [];
+    }
   }
 }
