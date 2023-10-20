@@ -1,3 +1,4 @@
+import { json } from "body-parser";
 import express from "express";
 import morgan from "morgan";
 import { json } from "body-parser";
@@ -7,6 +8,8 @@ import { createBeerRouter } from "./beerRouter";
 const application = express();
 
 application.use(morgan("dev"));
+application.use(json());
+
 application.use(json());
 
 application.use("/", createBaseRouter());

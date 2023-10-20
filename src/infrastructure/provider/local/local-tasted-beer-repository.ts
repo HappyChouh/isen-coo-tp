@@ -48,7 +48,6 @@ export class LocalTastedBeerRepository implements TastedBeerRepository {
     }
 
     const indexOfTastedBeer = tastedBeers.map(({ id }) => id).indexOf(id);
-
     tastedBeer.hasLiked = hasLiked;
 
     tastedBeers[indexOfTastedBeer] = tastedBeer;

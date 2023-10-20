@@ -4,6 +4,7 @@ import { makeBeerRepository } from "../provider/beer-repository-factory";
 import { getAllTastedBeers } from "../../application/use-case/get-all-tasted-beer-use-case";
 import { makeTastedBeerRepository } from "../provider/tasted-beer-repository-factory";
 import { addTastedBeers } from "../../application/use-case/add-tasted-beer-use-case";
+import { putTastedBeer } from "../../application/use-case/put-tasted-beer-use-case";
 
 export function createBeerRouter() {
   const router = Router();
@@ -32,6 +33,14 @@ export function createBeerRouter() {
     });
 
     return res.sendStatus(204);
+  });
+
+  router.put("/me", async (req, res) => {
+    const { id, hasLiked } = req.body;
+
+    await putTastedBeer(id, hasLiked, { tastedBeerRepository });
+
+    res.sendStatus(204);
   });
 
   return router;
