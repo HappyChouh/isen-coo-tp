@@ -6,7 +6,9 @@
       "color": "EXTRA_SPECIAL_BITTER",
       "id": 1,
       "name": "Buzz",
+      "hasLiked": false,
       "description": "A light, crisp and bitter IPA brewed with English and American hops. A small batch brewed only once.",
       "urlImage": "https://images.punkapi.com/v2/keg.png"
-    }]
-  }
+    }
+  ]
+}
