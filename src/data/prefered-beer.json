@@ -3,12 +3,52 @@
     {
       "alcoholByVolume": 4.5,
       "bitterness": 60,
-      "color": "EXTRA_SPECIAL_BITTER",
+      "color": "EXPORT_STOUT",
       "id": 1,
       "name": "Buzz",
       "hasLiked": false,
       "description": "A light, crisp and bitter IPA brewed with English and American hops. A small batch brewed only once.",
       "urlImage": "https://images.punkapi.com/v2/keg.png"
+    },
+    {
+      "alcoholByVolume": 5.2,
+      "bitterness": 38,
+      "color": "EXPORT_STOUT",
+      "id": 6,
+      "name": "Electric India",
+      "hasLiked": false,
+      "description": "Re-brewed as a spring seasonal, this beer – which appeared originally as an Equity Punk shareholder creation – retains its trademark spicy, fruity edge. A perfect blend of Belgian Saison and US IPA, crushed peppercorns and heather honey are also added to produce a genuinely unique beer.",
+      "urlImage": "https://images.punkapi.com/v2/6.png"
+    },
+    {
+      "alcoholByVolume": 11.2,
+      "bitterness": 35,
+      "color": "EXPORT_STOUT",
+      "id": 7,
+      "name": "AB:12",
+      "hasLiked": false,
+      "description": "An Imperial Black Belgian Ale aged in old Invergordon Scotch whisky barrels with mountains of raspberries, tayberries and blackberries in each cask. Decadent but light and dry, this beer would make a fantastic base for ageing on pretty much any dark fruit - we used raspberries, tayberries and blackberries beause they were local.",
+      "urlImage": "https://images.punkapi.com/v2/7.png"
+    },
+    {
+      "alcoholByVolume": 4.7,
+      "bitterness": 40,
+      "color": "IPA",
+      "id": 8,
+      "name": "Fake Lager",
+      "hasLiked": true,
+      "description": "Fake is the new black. Fake is where it is at. Fake Art, fake brands, fake breasts, and fake lager. We want to play our part in the ugly fallout from the Lager Dream. Say hello to Fake Lager – a zesty, floral 21st century faux masterpiece with added BrewDog bitterness.",
+      "urlImage": "https://images.punkapi.com/v2/8.png"
+    },
+    {
+      "alcoholByVolume": 12.5,
+      "bitterness": 30,
+      "color": "EXPORT_STOUT",
+      "id": 9,
+      "name": "AB:07",
+      "hasLiked": true,
+      "description": "Whisky cask-aged imperial scotch ale. Beer perfect for when the rain is coming sideways. Liquorice, plum and raisin temper the warming alcohol, producing a beer capable of holding back the Scottish chill.",
+      "urlImage": "https://images.punkapi.com/v2/9.png"
     }
   ]
 }

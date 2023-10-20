@@ -1,7 +1,6 @@
 import { json } from "body-parser";
 import express from "express";
 import morgan from "morgan";
-import { json } from "body-parser";
 import { createBaseRouter } from "./baseRouter";
 import { createBeerRouter } from "./beerRouter";
 
