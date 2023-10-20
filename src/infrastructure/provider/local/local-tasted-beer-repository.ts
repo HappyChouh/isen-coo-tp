@@ -7,7 +7,7 @@ export class LocalTastedBeerRepository implements TastedBeerRepository {
   private filePath: string;
 
   constructor() {
-    this.filePath = join(__dirname, "../../../data/prefered-beer.json");
+    this.filePath = join(__dirname, "../../../../data/prefered-beer.json");
   }
 
   async getAllTastedBeers(): Promise<TastedBeer[]> {
@@ -23,7 +23,6 @@ export class LocalTastedBeerRepository implements TastedBeerRepository {
 
   async addTastedBeer(tastedBeer: TastedBeer): Promise<void> {
     const tastedBeers = await this.getAllTastedBeers();
-
     const hasAlreadyTasted = !!tastedBeers.find(({ id }) => id === tastedBeer.id);
 
     if (hasAlreadyTasted) {
