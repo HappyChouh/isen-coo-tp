@@ -1,0 +1,12 @@
+{
+  "tastedBeers": [
+    {
+      "alcoholByVolume": 4.5,
+      "bitterness": 60,
+      "color": "EXTRA_SPECIAL_BITTER",
+      "id": 1,
+      "name": "Buzz",
+      "description": "A light, crisp and bitter IPA brewed with English and American hops. A small batch brewed only once.",
+      "urlImage": "https://images.punkapi.com/v2/keg.png"
+    }]
+  }

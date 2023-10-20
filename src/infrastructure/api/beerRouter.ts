@@ -1,10 +1,13 @@
 import { Router } from "express";
 import { getAllBeers } from "../../application/use-case/get-all-beers";
 import { makeBeerRepository } from "../provider/beer-repository-factory";
+import { getAllTastedBeers } from "../../application/use-case/get-all-tasted-beer-use-case";
+import { makeTastedBeerRepository } from "../provider/tasted-beer-repository-factory";
 
 export function createBeerRouter() {
   const router = Router();
   const beerRepository = makeBeerRepository();
+  const tastedBeerRepository = makeTastedBeerRepository();
 
   router.get("/", async (_, res) =>
     res.json({
@@ -12,7 +15,11 @@ export function createBeerRouter() {
     }),
   );
 
-  router.get("/me", async (req, res) => res.json({}));
+  router.get("/me", async (_, res) =>
+    res.json({
+      tastedBeers: await getAllTastedBeers({ tastedBeerRepository }),
+    }),
+  );
 
   return router;
 }
